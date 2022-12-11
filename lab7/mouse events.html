@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div 
+         {
+            width: 1120px;
+            padding-left: 160px;
+            border: 0px solid rgb(255, 255, 255);
+            margin: 60px;
+         } 
+        h1{
+            font-size: 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(0, 14, 136);
+            text-align: center;
+
+        }
+        h2{
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <title>Mouse events</title>
+</head>
+<body bgcolor="lightgreen">
+    <div>
+    <h1>MOUSE EVENTS</h1>
+    <h2>1 CLICKEVENT</h2>
+    <form>  
+        <input type="button" onclick="clickevent()" value="Click me"/>  
+    </form> 
+    <br><h2>2 MOUSEOVER EVENT</h2>
+    <h2 onmouseover="mouseoverevent()">Hey,Mouse over me </h1>
+    <br><h2>3 MOUSEUP EVENT AND MOUSEDOWN EVENT</h2>
+    <h2 id="myP" onmousedown="mousedownevent()" onmouseup="mouseupevent()">
+        Click the text! The mouseDown() function is triggered when the mouse button is pressed down over this paragraph, and sets the color of the text to red.
+        The mouseUp() function is triggered when the mouse button is released, and sets the color of the text to blue.
+    </h2>
+    
+    <br><h2>4 MOUSEMOVE EVENT</h2>
+    <h2 onmousemove="mousemoveevent()">Ha,Cool buddy move me to get ur gift!!!!!</h2>
+    <h1>REGULAR EXPRESSIONS</h1><br>
+
+    <h2>5 Search Method</h2>
+    <h2 >Hello,We are here to announce a big event in Amrita Vishwa Vidyapeetham for cyber fraud.</h2>
+    <h2>Searching 'Amrita' from above text the position is </h2>
+    <input type="button" onclick="f1()" value="Click here">
+    <h2 id="demo">Hello,We are here to announce a big event in Amrita Vishwa Vidyapeetham for cyber fraud.</h2>
+
+    <h2>6 Replace Method</h2>
+    
+    <h2 >Microsoft was one of the highest funding party for the Amrita cyber event.</h2>
+    <input type="button" onclick="f2()" value="Click here">
+
+    <h2 id="demo1">Microsoft was one of the highest funding party for the Amrita cyber event.</h2>
+
+    <script src="java.js"></script>
+    </div>
+</body>
+</html>
