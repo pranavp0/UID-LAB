@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Regular Expression</title>
+    <style>
+        body {
+            background-image: url("bg1.png");
+            height: 600px;
+            top: 0%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            background: #000000;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #008cff;
+            padding-left: 550px;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(255, 247, 0);
+        }
+
+        .navbar a.active {
+            background-color: rgb(255, 247, 0);
+            ;
+            color: black;
+        }
+
+        p {
+            line-height: 1.5em;
+            font-size: 1.2em;
+        }
+
+        h3 {
+            font-size: 1.3em;
+        }
+
+        .container {
+
+            min-width: 320px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+
+        }
+
+        .block {
+            background-color: #ffffffd6;
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 100px 100px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="navbar">
+        <a href="../index.html" style="text-decoration:none;">Main Page</a>
+        <a href="index.html">JS Mouse Events</a>
+        <a href="regular.html" class="active">JS Regular Expression</a>
+    </div>
+    <center>
+        
+        <div class="container block">
+            <h2>Given Sentence : </h2>
+            <h3>hey folks, welcome to cobra tate's chess class</h3>
+            <p>To find position of "cobra"<button onclick="finder()">Click Me </button> </p>
+
+
+            <p id="demo"></p>
+            <h3 id="te">Cobra chess is a high-tech chess center aimed for self improvement.</h3>
+            <p>To replace for with at <button onclick="rep()">Click Me</button> </p>
+        </div>
+    </center>
+    <script>
+        function finder() {
+            let text = "hey folks, welcome to cobra tate's chess class";
+            let n = text.search(/cobra/i);
+            document.getElementById("demo").innerHTML = "Warriors found at : " + n;
+        }
+
+        function rep() {
+            let text = document.getElementById("te").innerHTML;
+            document.getElementById("te").innerHTML =
+                text.replace(/for/i, "at");
+        }
+    </script>
+
+</body>
+
+</html>
