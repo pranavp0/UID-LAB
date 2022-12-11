@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <script>
+        function add() {
+            var one,two,sum;
+            one=parseInt(document.getElementById("first").value);
+            two=parseInt(document.getElementById("second").value);
+            sum=one+two;
+            document.getElementById("answer").value=sum;
+        }
+        function subrac(){
+            var one,two,sub;
+            one=parseInt(document.getElementById("first").value);
+            two=parseInt(document.getElementById("second").value);
+            sub=one-two;    
+            document.getElementById("answer").value=sub;
+        }
+        function multi(){
+            var one,two,mul;
+            one=parseInt(document.getElementById("first").value);
+            two=parseInt(document.getElementById("second").value);
+            mul=one*two;    
+            document.getElementById("answer").value=mul;
+        }
+        function divi(){
+            var one,two,div;
+            one=parseInt(document.getElementById("first").value);
+            two=parseInt(document.getElementById("second").value);
+            div=one/two;    
+            document.getElementById("answer").value=div;
+        }
+    </script>
+</head>
+
+<body>
+    <p>Enter First Number : <input id="first"></p>
+    <p>Enter Second Number : <input id="second"></p>
+    <button type="button" onclick="add()">Addition</button>
+    <button type="button" onclick="subrac()">Subraction</button>
+    <button type="button" onclick="multi()">Multiplication</button>
+    <button type="button" onclick="divi()">Division</button>
+    <p>Sum = <input id="answer"></p>
+</body>
+
+</html>
